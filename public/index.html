@@ -1,0 +1,18 @@
+<html ng-app="project">
+    <head>
+        <title>{{pageTitle}}</title>   
+    </head>
+    <body>
+    member menu start
+        <div ng-if="!!member">
+            <a href="/#/session/add">Add Session</a> <a href="/#/session/viewall">View Sessions</a> <a href="/#/session/movements">Movements</a> <a href="/#/member/logout">Logout</a>
+        </div>
+    member menu end    
+        <div ng-view></div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

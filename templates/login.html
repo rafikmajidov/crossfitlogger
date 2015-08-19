@@ -1,0 +1,9 @@
+<div ng-if="!member">
+	{{errorMessage}}
+    <div>Email: <input type="text" id="email" ng-model="visitor.email"></div>
+    <div>Password: <input type="password" id="pass" ng-model="visitor.pass"></div>
+    <div><button ng-click="login(visitor)">Login</button></div>
+    <div><a href="<<facebookOauthUri>>"><button>Login With Facebook</button></a></div>
+    <div><button ng-click="register(visitor)">Register</button></div>
+    <a href="<<forgetPasswordUri>>">Forget Password</a>
+</div>
